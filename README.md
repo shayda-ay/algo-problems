@@ -18,8 +18,14 @@
 
 ## LeetCode
 <a name="leetcode"></a>
+<details>
+  <summary>Easy</summary>
 
-В процессе...
+- [x] [1. Two Sum](Leetcode.Problems\Leetcode.Problems.1)
+- [x] [9. Palindrome Number](Leetcode.Problems\Leetcode.Problems.9) 
+
+  В процессе...
+</details>
 
 <br>
 
