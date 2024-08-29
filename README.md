@@ -21,8 +21,9 @@
 <details>
   <summary>Easy</summary>
 
-- [x] [1. Two Sum](Leetcode.Problems\Leetcode.Problems.1)
-- [x] [9. Palindrome Number](Leetcode.Problems\Leetcode.Problems.9) 
+- [x] [1. Two Sum](Leetcode.Problems/Leetcode.Problems.0001)
+- [x] [9. Palindrome Number](Leetcode.Problems/Leetcode.Problems.0009)
+- [x] [191. Number of 1 Bits](Leetcode.Problems/Leetcode.Problems.0191)  
 
   В процессе...
 </details>
