@@ -2,7 +2,9 @@
 using System.Globalization;
 using System.IO;
 
-/*Ошибка округления*/
+/*
+ * Ошибка округления
+ */
 public class Program {
     public static void Main(string[] args) {
         using var input = new StreamReader(Console.OpenStandardInput());

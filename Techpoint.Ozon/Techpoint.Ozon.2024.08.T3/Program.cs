@@ -1,7 +1,9 @@
 ﻿using System; 
 using System.IO;
 
-/*Корень дерева*/
+/*
+ * Корень дерева
+ */
 public class Program {
     public static void Main(string[] args) {
         using var input = new StreamReader(Console.OpenStandardInput());

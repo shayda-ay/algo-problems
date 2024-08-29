@@ -2,7 +2,9 @@
 using System.IO;
 using System.Reflection;
 
-/*Валидация ответа*/
+/*
+ * Валидация ответа
+ */
 public class Program {
     public static void Main(string[] args) {
         var result = new List<string>();

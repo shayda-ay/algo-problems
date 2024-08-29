@@ -2,7 +2,9 @@
 using System.IO;
 using System.Text;
 
-/*Удалить цифру из числа*/
+/*
+ * Удалить цифру из числа
+ */
 public class Program {
     public static void Main(string[] args) {
         using var input = new StreamReader(Console.OpenStandardInput());

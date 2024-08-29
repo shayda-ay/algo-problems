@@ -4,7 +4,9 @@ using System.IO;
 using System.Text;
 using System.Text.Json;
 
-/*JSON prettify*/
+/*
+ * JSON prettify
+ */
 public class Program {
     public static void Main(string[] args) {
         using var input = new StreamReader(Console.OpenStandardInput());

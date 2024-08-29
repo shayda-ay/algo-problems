@@ -1,7 +1,10 @@
 ﻿using System;
 using System.IO;
 
-/*Упаковка коробок*/
+/*
+ * Упаковка коробок
+ * Частичное решение!!!!
+ */
 public class Program {
     public static void Main(string[] args) {
         using var input = new StreamReader(Console.OpenStandardInput());

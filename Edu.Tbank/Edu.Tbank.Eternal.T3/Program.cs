@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Linq;
-/*Задача C. Лифты и переговорки*/
+
+/*
+ * Задача 3. Лифты и переговорки. 
+ * Partial Solution — Частичное решение. Пройденные тесты — 20
+*/
 public class Program {
     public static void Main(string[] args) {
         var line = Console.ReadLine().Split(' ');
