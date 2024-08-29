@@ -32,8 +32,15 @@
 
 ## Т-Банк
 <a name="tinkoff"></a>
+<details>
+  <summary>Вечный контест</summary>
 
-В процессе...
+- [x] [1 задание](Edu.Tbank/Edu.Tbank.Eternal.T1)
+- [x] [2 задание](Edu.Tbank/Edu.Tbank.Eternal.T2)
+- [ ] [3 задание](Edu.Tbank/Edu.Tbank.Eternal.T3)
+
+  В процессе...
+</details>
 
 <br>
 
