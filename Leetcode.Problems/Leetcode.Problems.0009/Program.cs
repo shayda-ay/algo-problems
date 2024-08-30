@@ -1,6 +1,7 @@
 ﻿using System;
 /*
  * 9. Palindrome Number
+ * https://leetcode.com/problems/palindrome-number/description/
  */
 public class Program {
     public static void Main() {
@@ -16,7 +17,7 @@ public class Program {
         string str = x.ToString();
         int left = 0;
         int right = str.Length - 1;
-        long mid = left + (right - left) / 2;
+        long mid = left + (right - left) / 2; 
 
         while (left <= mid) {
             if (str[left] != str[right]) {

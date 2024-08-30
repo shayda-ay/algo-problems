@@ -23,6 +23,10 @@
 
 - [x] [1. Two Sum](Leetcode.Problems/Leetcode.Problems.0001)
 - [x] [9. Palindrome Number](Leetcode.Problems/Leetcode.Problems.0009)
+- [x] [26. Remove Duplicates from Sorted Array](Leetcode.Problems/Leetcode.Problems.0026)
+- [x] [27. Remove Element](Leetcode.Problems/Leetcode.Problems.0027)    
+- [x] [58. Length of Last Word](Leetcode.Problems/Leetcode.Problems.0058)  
+- [x] [69. Sqrt(x)](Leetcode.Problems/Leetcode.Problems.0069)  
 - [x] [191. Number of 1 Bits](Leetcode.Problems/Leetcode.Problems.0191)  
 
   В процессе...
