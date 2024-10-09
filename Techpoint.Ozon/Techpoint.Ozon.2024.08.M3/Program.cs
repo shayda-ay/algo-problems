@@ -38,7 +38,7 @@ public class Program {
                 if (line[0] == "CHANGE") {
                     uint Id = uint.Parse(line[2]);
                     if (hashById.ContainsKey(Id)) {
-                        var lastIndexById = hashById[Id].LastOrDefault();
+                        var lastIndexById = hashById[Id].Last();
                         var lastProductByIndex = products[lastIndexById - 1];
                         if (lastProductByIndex is not null && lastProductByIndex.Name != line[1] && !lastProductByIndex.TimeEnd.HasValue) {
                             lastProductByIndex.SetTimeEnd(i - 1);
@@ -46,7 +46,7 @@ public class Program {
                     }
 
                     if (hashByName.ContainsKey(line[1])) {
-                        var lastIndexByName = hashByName[line[1]].LastOrDefault();
+                        var lastIndexByName = hashByName[line[1]].Last();
                         var lastProductByIndex = products[lastIndexByName - 1];
                         if (lastProductByIndex is not null && !lastProductByIndex.TimeEnd.HasValue) {
                             if (lastProductByIndex.Id != Id) {
