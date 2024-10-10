@@ -4,8 +4,7 @@ using System.IO;
 /*Галерея искусств*/
 public class Program {
     public static void Main(string[] args) {
-          using var input = new StreamReader(Console.OpenStandardInput());
-       
+        using var input = new StreamReader(Console.OpenStandardInput()); 
         using var output = new StreamWriter(Console.OpenStandardOutput());
         uint t = uint.Parse(input.ReadLine());
         while (t > 0) {
@@ -39,11 +38,8 @@ public class Program {
                 m1++;
             }
             //отсортируем коробки и картины по убыванию ширины и длины, то есть по первому числу.
-            //Sort(boxs, 0); 
-            //Sort(pics, 0);
-
-            boxs = boxs.OrderByDescending(x => x[0]).ThenByDescending(x => x[1]).ToArray();
-            pics = pics.OrderByDescending(x => x[0]).ThenByDescending(x => x[1]).ToArray();
+            Sort(boxs, 0); 
+            Sort(pics, 0); 
 
             int ptrboxes = 0, //указатель массива коробок
                 ptrimages = 0, //указатель массива картин
@@ -51,25 +47,30 @@ public class Program {
                 width_all = -1,  // максимальная ширина из рассмотренных коробок
                 count = 0; //необходимое количество коробок
 
+
             while (ptrimages < m && ptrboxes < n) {
                 //Картина по длине вмещается в коробку
                 if (pics[ptrimages][0] <= boxs[ptrboxes][0]) {
                     width_all = Math.Max(width_all, boxs[ptrboxes][1]); //обновим максимальную ширину рассмотреных коробок
                     ptrboxes++; //сдвинем указатель массива коробок
                 } else { //Картина по длине не вмещается в коробку 
-                    if (width_taken < pics[ptrimages][1] && width_all > pics[ptrimages][1]) { //Берем новую коробку
+                    if (width_all < pics[ptrimages][1]) {  // Крайний случай картина не поместилась
+                        count = -1;
+                        break;
+                    } 
+                    if (width_taken < pics[ptrimages][1] && width_all >= pics[ptrimages][1]) { //Берем новую коробку
                         width_taken = width_all;
                         count++;
                     }
                     ptrimages++;
                 }
             }
-            if (ptrimages == m-1 && width_taken < pics[ptrimages][1] && width_all > pics[ptrimages][1]) { //Берем новую коробку
+            if (ptrimages < m && width_taken < pics[ptrimages][1] && width_all >= pics[ptrimages][1]) { //Берем новую коробку
                 count++;
             }
             if (count == 0) {
                 count = -1;
-            } 
+            }
             output.WriteLine(count);
             t--;
         }
