@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Diagnostics;
 using System.IO;
 
 /*
@@ -69,28 +70,43 @@ public class Program {
                 } else if (line[0] == "GET") {
                     uint time = uint.Parse(line[2]);
                     uint Id = uint.Parse(line[1]);
-                    if (hashById.ContainsKey(Id)) {
-                        Product find = null;
-                        foreach (var it in hashById[Id]) {
-                            var productByIndex = products[it - 1];
+                    var result = "404";
+                    if (hashById.ContainsKey(Id)) { 
+                        var arr = hashById[Id].ToArray();
+                        var index = maxLowerOrEqual(arr, time);
+                        if (index >= 0) {
+                            Product find = null;
+                            var productByIndex = products[arr[index] - 1];
                             if (productByIndex != null && productByIndex.TimeStart <= time && (productByIndex.TimeEnd == null || productByIndex.TimeEnd >= time)) {
                                 find = productByIndex;
-                                break;
+                            }
+                            if (find is not null) {
+                                result = find.Name;
                             }
                         }
-                        if (find is not null) {
-                            output.WriteLine(find.Name);
-                        } else {
-                            output.WriteLine("404");
-                        }
-                    } else {
-                        output.WriteLine("404");
                     }
+                    output.WriteLine(result);
                 }
                 i++;
             }
             t--;
         }
+    }
+    static int maxLowerOrEqual(uint[] sortedArr, uint X) {
+        // Сначала проверим, существует ли искомый элемент
+        if (sortedArr.Length == 0 || sortedArr[0] > X)
+            return -1;
+
+        int left_idx = 0;
+        int right_idx = sortedArr.Length;
+        while (left_idx + 1 < right_idx) {
+            int mid_idx = (left_idx + right_idx) / 2;
+            if (sortedArr[mid_idx] <= X)
+                left_idx = mid_idx;
+            else
+                right_idx = mid_idx;
+        }
+        return left_idx;
     }
     private static void AddToHashById(uint id, uint index, Dictionary<uint, List<uint>> hashById) {
         if (!hashById.ContainsKey(id)) {

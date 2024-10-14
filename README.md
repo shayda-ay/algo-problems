@@ -79,9 +79,9 @@
 - [x] [2.Деление массивов](Techpoint.Ozon/Techpoint.Ozon.2024.08.M2)
 - [x] [3.ProductID](Techpoint.Ozon/Techpoint.Ozon.2024.08.M3)
 - [x] [4.Валидация ответа](Techpoint.Ozon/Techpoint.Ozon.2024.08.M4)
-- [ ] [5.YAML to INI](Techpoint.Ozon/Techpoint.Ozon.2024.08.M5)
+- [x] [5.YAML to INI](Techpoint.Ozon/Techpoint.Ozon.2024.08.M5)
 - [x] [6.Зеркальные пары](Techpoint.Ozon/Techpoint.Ozon.2024.08.M6)
-- [ ] [7.Крестики-нолики](Techpoint.Ozon/Techpoint.Ozon.2024.08.M7)
-- [ ] [8.Галерея искусств](Techpoint.Ozon/Techpoint.Ozon.2024.08.M8)
+- [x] [7.Крестики-нолики](Techpoint.Ozon/Techpoint.Ozon.2024.08.M7)
+- [x] [8.Галерея искусств](Techpoint.Ozon/Techpoint.Ozon.2024.08.M8)
 
 </details>

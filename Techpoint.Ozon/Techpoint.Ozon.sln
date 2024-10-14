@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2024-08", "2024-08", "{C9D91DDF-E54B-4798-889E-EE8E42D00E5F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "main", "main", "{4043EC42-39E9-400A-841D-9C7731251912}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\Users\Алексей Шайда\Downloads\Разбор_контеста.pdf = ..\..\..\..\..\Users\Алексей Шайда\Downloads\Разбор_контеста.pdf
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "training", "training", "{46CF1716-5190-487B-9892-E32590C50CB4}"
 EndProject
